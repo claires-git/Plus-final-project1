@@ -46,8 +46,8 @@ a {
 }
 
 .weather-app-city {
-  margin: 0;
-  font-size: 40px;
+  margin-top: 20px;
+  font-size: 55px;
   font-weight: 800;
   line-height: 48px;
 }
@@ -61,7 +61,6 @@ a {
 
 .weather-app-details strong {
   color: #f65282;
-  
 }
 
 .weather-app-icon {
@@ -94,6 +93,6 @@ h1 {
 footer {
   text-align: center;
   font-size: 14px;
-  margin-top: 30px;
+  margin-top: 20px;
   color: rgba(0, 0, 0, 0.5);
 }
