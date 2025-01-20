@@ -103,6 +103,7 @@ a {
 .weather-forecast-temperatures {
   color: #f65282;
   text-align: center;
+  display: flex;
 }
 .weather-forecast-temperatures strong {
   margin-right: 10px;
