@@ -53,7 +53,32 @@ function searchHandler(event) {
   searchCity(searchInput.value);
 }
 
+function displayForecast() {
+  let days = ["Tues", "Wed", "Thu", "Fri", "Sat"];
+  let forecasthtml = "";
+
+  days.forEach(function (day) {
+    forecasthtml =
+      forecasthtml +
+      `<div class="weather-forecast-date">
+            <div class="weather-forecast-day">${day}</div>
+            <div class="weather-forecast-icon">🌤️</div>
+            <div class="weather-forecast-temperatures">
+            <div class = "weather-foreccast-temperature">
+              <strong>15º </strong>
+            </div>
+            <div class="weather-forecast-temperature"> 9º </div>
+            </div>
+            </div>
+          
+            `;
+  });
+  let forecastElement = document.querySelector("#forecast");
+  forecastElement.innerHTML = forecasthtml;
+}
+
 let searchFormElement = document.querySelector("#search-form");
 searchFormElement.addEventListener("submit", searchHandler);
 
 searchCity("Tokyo");
+displayForecast();
